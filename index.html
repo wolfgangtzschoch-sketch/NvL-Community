@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NvL NoobiesVonLurchhausen</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      background: url('https://images.unsplash.com/photo-1600185362267-6ec91d7b0576?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Z2FtaW5nfHx8fHx8MTY5OTEyNTQwMw&ixlib=rb-4.0.3&q=80&w=1920') no-repeat center center fixed;
+      background-size: cover;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(51,0,0,0.75);
+      z-index: -1;
+    }
+    header {
+      background-color: rgba(85,0,0,0.85);
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    header p {
+      margin: 5px 0 0 0;
+      font-size: 1.2em;
+      color: #ffcccc;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px 0;
+      background-color: rgba(68,0,0,0.85);
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #ff6666;
+    }
+    .section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: rgba(68,0,0,0.75);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .game-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    .game {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+      transition: transform 0.2s;
+    }
+    .game img {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+    }
+    .game:hover {
+      transform: scale(1.1);
+    }
+    h2 {
+      color: #ff9999;
+      border-bottom: 1px solid #ff6666;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(85,0,0,0.85);
+      font-size: 0.9em;
+      color: #ffcccc;
+      margin-top: 50px;
+    }
+    .news-item {
+      margin-bottom: 15px;
+      background-color: rgba(102,0,0,0.75);
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .admin-list span {
+      display: inline-block;
+      background-color: rgba(102,0,0,0.85);
+      margin: 5px;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>NvL NoobiesVonLurchhausen</h1>
+    <p>Willkommen in unserer Gaming-Community!</p>
+  </header>
+
+  <nav>
+    <a href="#games">Spiele</a>
+    <a href="#news">News</a>
+    <a href="#rules">Regeln</a>
+    <a href="#admins">Admins</a>
+  </nav>
+
+  <!-- Spiele-Sektion -->
+  <section class="section" id="games">
+    <h2>Unsere Spiele & Server</h2>
+    <div class="game-icons">
+      <a class="game" href="https://minecraft.net" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" alt="Minecraft">
+        <span>Minecraft Server</span>
+      </a>
+      <a class="game" href="https://dayz.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/e3/DayZ_cover.jpg" alt="DayZ">
+        <span>DayZ Server</span>
+      </a>
+      <a class="game" href="https://7daystodie.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/7_Days_to_Die_cover.jpg" alt="7 Days To Die">
+        <span>7 Days To Die Server</span>
+      </a>
+      <a class="game" href="https://www.rockstargames.com/V/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png" alt="GTA V">
+        <span>GTA V Online</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- News-Sektion -->
+  <section class="section" id="news">
+    <h2>Neuigkeiten</h2>
+    <div class="news-item">
+      <strong>05.12.2025:</strong> Unser Minecraft-Server hat ein neues Event! Alle Spieler sind eingeladen.
+    </div>
+    <div class="news-item">
+      <strong>01.12.2025:</strong> GTA V Online Server wurde erfolgreich gestartet.
+    </div>
+    <div class="news-item">
+      <strong>28.11.2025:</strong> DayZ Server Update – neue Waffen und Karten sind verfügbar.
+    </div>
+  </section>
+
+  <!-- Regeln-Sektion -->
+  <section class="section" id="rules">
+    <h2>Regeln der Server</h2>
+    <ul>
+      <li>1. Kein Cheaten oder Exploiten erlaubt.</li>
+      <li>2. Beleidigungen und Hass sind verboten.</li>
+      <li>3. Kein Griefing auf PvP-freien Servern.</li>
+      <li>4. Folge den Anweisungen der Admins.</li>
+      <li>5. Respektiere andere Spieler jederzeit.</li>
+    </ul>
+  </section>
+
+  <!-- Admins-Sektion -->
+  <section class="section" id="admins">
+    <h2>Unsere Admins</h2>
+    <div class="admin-list">
+      <span>Wolfgang (Wolle)</span>
+      <span>Lurchi</span>
+      <span>NoobMaster</span>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 NvL NoobiesVonLurchhausen - Alle Rechte vorbehalten
+  </footer>
+
+</body>
+</html>
